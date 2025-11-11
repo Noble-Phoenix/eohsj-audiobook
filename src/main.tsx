@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx'; // Ensure this is .tsx
+import './index.css'; // Import Tailwind CSS
 import './i18n'; 
 
 ReactDOM.createRoot(document.getElementById('root')!).render( // Add '!' for non-null assertion

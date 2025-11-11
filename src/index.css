@@ -1,11 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Colors from Figma Design Tokens */
+  --color-beige-100: #FFFEFF;
+  --color-beige-500: #FFFAEE;
+  --color-beige-600: #CCB88A;
+  --color-beige-700: #998666;
+  --color-beige-800: #665344;
+  --color-beige-900: #332A21;
+
+  --color-brand-100: #FDE8E6;
+  --color-brand-200: #F9C4C0;
+  --color-brand-300: #F5A09A;
+  --color-brand-400: #F17C74;
+  --color-brand-500: #FB6358;
+  --color-brand-600: #D14E45;
+  --color-brand-700: #A83932;
+  --color-brand-800: #B3504B;
+  --color-brand-900: #C43D35;
+
+  --color-gray-100: #F5F3F3;
+  --color-gray-200: #E1DCDC;
+  --color-gray-300: #CFCACA;
+  --color-gray-400: #BDB7B7;  
+  --color-gray-500: #3E3636;
+  --color-gray-600: #8B8585;
+  --color-gray-700: #6E6666;
+  --color-gray-800: #524C4C;
+  --color-gray-900: #362F2F;
+
+  --color-success-100: #e3f6cc;
+  --color-success-200: #c8ed99;
+  --color-success-300: #ace566;
+  --color-success-400: #91dc33;
+  --color-success-500: #75d300;
+  --color-success-600: #5ea900;
+  --color-success-700: #467f00;
+  --color-success-800: #2f5400;
+  --color-success-900: #172a00;
+
+  --color-info-100: #ccedfb;
+  --color-info-200: #99dbf6;
+  --color-info-300: #66c9f2;
+  --color-info-400: #33b7ed;
+  --color-info-500: #00a5e9;
+  --color-info-600: #0084ba;
+  --color-info-700: #00638c;
+  --color-info-800: #00425d;
+  --color-info-900: #00212f;
+
+  --color-warning-100: #fff1d2;
+  --color-warning-200: #ffe3a5;
+  --color-warning-300: #ffd479;
+  --color-warning-400: #ffc64c;
+  --color-warning-500: #ffb81f;
+  --color-warning-600: #cc9319;
+  --color-warning-700: #996e13;
+  --color-warning-800: #664a0c;
+  --color-warning-900: #332506;
+
+  --color-danger-100: #ffd4d5;
+  --color-danger-200: #ffa8ab;
+  --color-danger-300: #ff7d80;
+  --color-danger-400: #ff5156;
+  --color-danger-500: #ff262c;
+  --color-danger-600: #cc1e23;
+  --color-danger-700: #99171a;
+  --color-danger-800: #660f12;
+  --color-danger-900: #330809;
+
+  /* Semantic color mappings */
+  --color-primary: var(--color-brand-500);
+  --color-success: var(--color-success-500);
+  --color-info: var(--color-info-500);
+  --color-warning: var(--color-warning-500);
+  --color-danger: var(--color-danger-500);
+
+    --font-roboto: "Roboto", sans-serif; 
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--color-beige-100);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,56 +93,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.roboto-condensed {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 75
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
