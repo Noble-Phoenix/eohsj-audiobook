@@ -18,51 +18,57 @@ const App: React.FC = () => {
 			<div className="flex justify-center align-center flex-col">
 				{/* Language Switcher */}
 				<div className="bg-gray-500 ">
-					<div className="flex mx-auto max-w-[1200px] justify-center md:justify-end p-4 items-center gap-4 flex-wrap">
-						<span className="text-white hidden md:inline-flex">{t("language_label")}:</span>
-						<button
-							onClick={() => changeLanguage("en")}
-							disabled={i18n.language === "en"}
-						>
-							<img src="src/assets/english.svg" alt="English" className="w-10 cursor-pointer" />
-						</button>
-						<button
-							onClick={() => changeLanguage("fr")}
-							disabled={i18n.language === "fr"}
-						>
-							<img src="src/assets/francias.svg" alt="Français" className="w-10 cursor-pointer" />
-						</button>
-            <button
-							onClick={() => changeLanguage("de")}
-							disabled={i18n.language === "de"}
-						>
-							<img src="src/assets/deutsch.svg" alt="Deutsch" className="w-10 cursor-pointer" />
-						</button>
-            <button
-							onClick={() => changeLanguage("it")}
-							disabled={i18n.language === "it"}
-						>
-							<img src="src/assets/italia.svg" alt="Italiano" className="w-10 cursor-pointer" />
-						</button>
-            <button
-							onClick={() => changeLanguage("ru")}
-							disabled={i18n.language === "ru"}
-						>
-							<img src="src/assets/russia.svg" alt="Русский" className="w-10 cursor-pointer" />
-						</button>
+					<div className="flex mx-auto max-w-[1200px] justify-center md:justify-between p-4 px-8 items-center gap-4 flex-wrap">
+            <a href="https://eohsjnorthamerica.org" target="_blank" rel="noopener noreferrer" className='hover:scale-115 transition-transform'>
+              <img src="src/assets/cross.svg" alt="EOHSJ America Logo" className="w-10 cursor-pointer" />
+            </a>
+            <div className='flex items-center gap-4 flex-wrap'>
+              <span className="text-white hidden md:inline-flex">{t("language_label")}:</span>
+              <button
+                onClick={() => changeLanguage("en")}
+                disabled={i18n.language === "en"}
+              >
+                <img src="src/assets/english.svg" alt="English" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+              </button>
+              <button
+                onClick={() => changeLanguage("fr")}
+                disabled={i18n.language === "fr"}
+              >
+                <img src="src/assets/francias.svg" alt="Français" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+              </button>
+              <button
+                onClick={() => changeLanguage("de")}
+                disabled={i18n.language === "de"}
+              >
+                <img src="src/assets/deutsch.svg" alt="Deutsch" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+              </button>
+              <button
+                onClick={() => changeLanguage("it")}
+                disabled={i18n.language === "it"}
+              >
+                <img src="src/assets/italia.svg" alt="Italiano" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+              </button>
+              <button
+                onClick={() => changeLanguage("ru")}
+                disabled={i18n.language === "ru"}
+              >
+                <img src="src/assets/russia.svg" alt="Русский" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+              </button>
+
+            </div>
 					</div>
 				</div>
 				<div className=''>
-					<div className="flex mx-auto max-w-[1200px] p-4 flex-col gap-4 md:gap-6 lg:gap-10 items-center mt-10 md:mt-20 lg:mt-30">
+					<div className="relative flex mx-auto max-w-[1200px] p-4 flex-col gap-4 md:gap-6 lg:gap-10 items-center mt-10 md:mt-20 lg:mt-30">
 						{/* Translated Content */}
-            <h1 className="uppercase roboto-condensed text-[36px] md:text-[48px] lg:text-[62px] font-bold w-[358px] md:w-[700px] lg:w-[900px] leading-[1.1] text-center">The House Was Filled With The Fragrance Of The Perfume:</h1>
-            <h2 className="uppercase roboto-condensed text-[32px] md:text-[36px] font-medium w-[358px] md:w-[600px] lg:w-[900px] leading-[1.1] text-center text-brand-600">A Spirituality of the Order of the Holy Sepulchre</h2>
-            <p className='roboto-condensed text-[18px] w-[358px] md:w-[500px] lg:w-[600px] leading-[1.5] text-center'>
+            <h1 className="uppercase roboto-condensed text-[36px] md:text-[48px] lg:text-[52px] xl:text-[62px] font-bold w-[358px] md:w-[700px] lg:w-[750px] xl:w-[900px] leading-[1.1] text-center">The House Was Filled With The Fragrance Of The Perfume:</h1>
+            <h2 className="uppercase roboto-condensed text-[32px] md:text-[36px] font-medium w-[358px] md:w-[500px] lg:w-[650px] xl:w-[900px] leading-[1.1] text-center text-brand-600">A Spirituality of the Order of the Holy Sepulchre</h2>
+            <img src="src/assets/bookcover.jpg" alt="Book Cover" className="my-8 md:my-2 w-[240px] lg:absolute lg:w-[320px] lg:overflow-hidden lg:block lg:-left-30 xl:-left-40 lg:top-30 lg:-rotate-18"/>
+            <p className='roboto-condensed text-[18px] w-[358px] md:w-[600px] lg:w-[500px] xl:w-[600px] leading-[1.5] text-center'>
               In his book on the spirituality of the Equestrian Order of the Holy Sepulchre of Jerusalem, the Grand Master of the Order, Cardinal Fernando Filoni, reflects on the life, the beliefs, the values, and the choices of a Knight and Dame.
             <br/>
               This book will help help current members of the Order in deepening their faith journey.  It will serve as an introduction to the Order for Catholics interested in our mission for caring for the peoples and places in the Holy Land.
             </p>
-						{/* <h1 className="text-red-500">{t("title")}</h1> */}
 					</div>
 				</div>
 
@@ -85,8 +91,8 @@ const App: React.FC = () => {
           </div>
         </div>
         <div className=''>
-					<div className="flex flex-wrap mx-auto bg-beige-100">
-						<div className="w-full lg:w-1/2 p-10">
+					<div className="flex flex-wrap mx-auto lg:justify-around bg-beige-100">
+						<div className="w-full lg:ml-auto lg:max-w-[600px] lg:w-1/2 p-10">
             <h3 className="uppercase roboto-condensed text-xl">The Author</h3>
             <h2 className="uppercase roboto-condensed text-3xl font-bold mb-6">Cardinal Fernando Filoni</h2>
             <p className="font-normal">
