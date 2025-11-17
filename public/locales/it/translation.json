@@ -1,0 +1,29 @@
+{
+  "language_label": "Lingua",
+
+  "hero": {
+    "title": "La casa si riempì del profumo dell’unguento:",
+    "subtitle": "Una spiritualità dell’Ordine del Santo Sepolcro",
+    "intro_1": "Nel suo libro sulla spiritualità dell’Ordine Equestre del Santo Sepolcro di Gerusalemme, il Gran Maestro dell’Ordine, il Cardinale Fernando Filoni, riflette sulla vita, le convinzioni, i valori e le scelte di un Cavaliere e di una Dama.",
+    "intro_2": "Questo libro aiuterà i membri dell’Ordine ad approfondire il loro cammino di fede. Sarà anche un’introduzione all’Ordine per i cattolici interessati alla nostra missione di sostegno alle persone e ai luoghi della Terra Santa."
+  },
+
+  "cta": {
+    "buy": "Acquista il libro",
+    "download_audio": "Scarica l’audio",
+    "listen_online": "Ascolta online"
+  },
+
+  "author": {
+    "section_title": "L’Autore",
+    "name": "Cardinale Fernando Filoni",
+    "bio": [
+      "Sua Eminenza, il Cardinale Fernando Filoni, è nato il 15 aprile 1946 a Manduria (Taranto, Italia). In giovane età, la sua famiglia tornò a Galatone (Lecce), città di origine. Frequentò il seminario minore di Nardò e completò gli studi al Seminario Regionale Pio XI di Molfetta, proseguendo poi gli studi teologici a Viterbo presso il Seminario Santa Maria della Quercia.",
+      "Mons. Antonio Rosario Mennonna, Vescovo di Nardò, lo ordinò sacerdote il 3 luglio 1970 a Galatone. Ha ottenuto una laurea in diritto canonico presso la Pontificia Università Lateranense e una laurea in filosofia presso l’Università La Sapienza. Successivamente si specializzò presso la Pro Deo (oggi LUISS) in Scienze Politiche e Sociali con indirizzo giornalistico.",
+      "Durante questo periodo a Roma, servì come viceparroco, dedicandosi in particolare all’educazione dei giovani, e insegnò nei licei classici Vivona e Socrate.",
+      "Conclusi gli studi, il Cardinale Vicario Ugo Poletti gli propose di entrare nell’Accademia Pontificia Ecclesiastica. Il 3 aprile 1981 ricevette il suo primo incarico diplomatico in Sri Lanka. Dopo tre anni venne inviato in Iran (1983-1985). In seguito fu chiamato alla Segreteria di Stato per occuparsi delle relazioni con le organizzazioni internazionali.",
+      "Nel 1989 fu inviato in Brasile fino al 1992, quando venne accreditato come Addetto Culturale nelle Filippine con residenza a Hong Kong, dove la Santa Sede aveva istituito una Missione di Studio per seguire da vicino la situazione della Chiesa in Cina.",
+      "Il 17 gennaio 2001 venne eletto alla sede titolare di Volturno con dignità arcivescovile e nominato Nunzio Apostolico in Giordania e Iraq. Ricevette l’ordinazione episcopale da San Giovanni Paolo II il 19 marzo 2001 nella Basilica di San Pietro."
+    ]
+  }
+}

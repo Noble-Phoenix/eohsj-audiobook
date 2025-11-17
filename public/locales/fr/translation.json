@@ -1,0 +1,29 @@
+{
+  "language_label": "Langue",
+
+  "hero": {
+    "title": "La maison fut remplie du parfum du baume :",
+    "subtitle": "Une spiritualité de l’Ordre du Saint-Sépulcre",
+    "intro_1": "Dans son ouvrage consacré à la spiritualité de l’Ordre Équestre du Saint-Sépulcre de Jérusalem, le Grand Maître de l’Ordre, le Cardinal Fernando Filoni, réfléchit sur la vie, les croyances, les valeurs et les choix d’un Chevalier et d’une Dame.",
+    "intro_2": "Ce livre aidera les membres actuels de l’Ordre à approfondir leur chemin de foi. Il servira également d’introduction à l’Ordre pour les catholiques intéressés par notre mission de soutien aux peuples et aux lieux de Terre Sainte."
+  },
+
+  "cta": {
+    "buy": "Acheter le livre",
+    "download_audio": "Télécharger l’audio",
+    "listen_online": "Écouter en ligne"
+  },
+
+  "author": {
+    "section_title": "L’Auteur",
+    "name": "Cardinal Fernando Filoni",
+    "bio": [
+      "Son Éminence, le Cardinal Fernando Filoni, est né le 15 avril 1946 à Manduria (Tarente, Italie). Très jeune, sa famille retourne dans sa ville d’origine, Galatone (Lecce). Il fréquente le petit séminaire de Nardò avant d’achever ses études secondaires à Molfetta au Séminaire Régional des Pouilles Pio XI, puis ses études de théologie à Viterbo au Séminaire Santa Maria della Quercia.",
+      "Mgr Antonio Rosario Mennonna, évêque de Nardò, l’a ordonné prêtre le 3 juillet 1970 à Galatone. Il a ensuite étudié à l’Université Pontificale du Latran où il a obtenu une licence en droit canonique, puis à l’Université La Sapienza où il a obtenu une licence en philosophie. Il a poursuivi ses études à la Pro Deo (désormais LUISS) obtenant un diplôme supérieur en sciences politiques et sociales, spécialisé en journalisme.",
+      "Durant cette période à Rome, il a servi comme vicaire paroissial, en particulier auprès des jeunes, et a enseigné dans les lycées classiques Vivona et Socrate.",
+      "À la fin de ses études, le Cardinal Vicaire Ugo Poletti lui propose d’entrer à l’Académie Pontificale Ecclésiastique. Le 3 avril 1981, il reçoit sa première mission diplomatique au Sri Lanka. Après trois ans, il est envoyé en Iran (1983-1985). Plus tard, il est appelé à la Secrétairerie d’État pour suivre les relations avec les organisations internationales.",
+      "En 1989, il est envoyé au Brésil jusqu’en 1992, puis accrédité aux Philippines comme attaché culturel, tout en résidant à Hong Kong où le Saint-Siège avait ouvert une mission pour suivre de près la situation de l’Église en Chine.",
+      "Le 17 janvier 2001, il est élu au siège titulaire de Volturno avec le titre d’archevêque et nommé Nonce apostolique en Jordanie et en Irak. Il a reçu l’ordination épiscopale du pape Jean-Paul II le 19 mars 2001 dans la basilique Saint-Pierre."
+    ]
+  }
+}

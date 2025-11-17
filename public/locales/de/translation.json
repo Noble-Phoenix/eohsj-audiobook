@@ -1,0 +1,29 @@
+{
+  "language_label": "Sprache",
+
+  "hero": {
+    "title": "Das Haus erfüllte sich mit dem Duft des Salböls:",
+    "subtitle": "Eine Spiritualität des Ordens vom Heiligen Grab",
+    "intro_1": "In seinem Buch über die Spiritualität des Ritterordens vom Heiligen Grab zu Jerusalem reflektiert der Großmeister des Ordens, Kardinal Fernando Filoni, über das Leben, die Überzeugungen, die Werte und die Entscheidungen eines Ritters und einer Dame.",
+    "intro_2": "Dieses Buch soll den heutigen Mitgliedern des Ordens helfen, ihren Glaubensweg zu vertiefen. Es dient auch als Einführung für Katholiken, die sich für unsere Mission zur Unterstützung der Menschen und heiligen Stätten im Heiligen Land interessieren."
+  },
+
+  "cta": {
+    "buy": "Buch kaufen",
+    "download_audio": "Audio herunterladen",
+    "listen_online": "Online anhören"
+  },
+
+  "author": {
+    "section_title": "Der Autor",
+    "name": "Kardinal Fernando Filoni",
+    "bio": [
+      "Seine Eminenz, Kardinal Fernando Filoni, wurde am 15. April 1946 in Manduria (Tarent, Italien) geboren. Schon früh kehrte seine Familie in ihre Heimatstadt Galatone (Lecce) zurück. Er besuchte das Knabenseminar von Nardò und schloss seine weiterführende Schulbildung im Seminar der Region Apulien Pio XI in Molfetta ab, gefolgt vom Theologiestudium in Viterbo am Seminar Santa Maria della Quercia.",
+      "Bischof Antonio Rosario Mennonna weihte ihn am 3. Juli 1970 in Galatone zum Priester. Er studierte anschließend an der Päpstlichen Lateranuniversität und erwarb ein Kanonistik-Diplom sowie an der Universität La Sapienza ein Philosophie-Diplom. Weiterhin erwarb er an der Pro Deo (heute LUISS) ein Aufbaustudium in Politischen und Sozialwissenschaften mit Schwerpunkt Journalismus.",
+      "Während dieser Zeit in Rom diente er als Kaplan, insbesondere in der Jugendarbeit, und unterrichtete an den klassischen Gymnasien Vivona und Socrates.",
+      "Nach Abschluss seiner Studien wurde er vom Kardinalvikar Ugo Poletti an die Päpstliche Diplomatenakademie berufen. Am 3. April 1981 erhielt er seine erste diplomatische Mission in Sri Lanka. Danach wurde er nach Iran (1983–1985) entsandt. Später wurde er in das Staatssekretariat berufen, um die Beziehungen zu internationalen Organisationen zu betreuen.",
+      "1989 wurde er nach Brasilien versetzt, bis er 1992 als Kulturattaché auf die Philippinen akkreditiert wurde. Seine Residenz befand sich in Hongkong, wo der Heilige Stuhl eine Studienmission zur Beobachtung der Kirche in China eingerichtet hatte.",
+      "Am 17. Januar 2001 wurde er zum Titularerzbischof von Volturno ernannt und zum Apostolischen Nuntius für Jordanien und Irak bestellt. Am 19. März 2001 erhielt er die Bischofsweihe von Papst Johannes Paul II. im Petersdom."
+    ]
+  }
+}

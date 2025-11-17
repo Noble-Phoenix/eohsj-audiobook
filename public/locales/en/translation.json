@@ -1,0 +1,29 @@
+{
+  "language_label": "Language",
+
+  "hero": {
+    "title": "The House Was Filled With The Fragrance Of The Perfume:",
+    "subtitle": "A Spirituality of the Order of the Holy Sepulchre",
+    "intro_1": "In his book on the spirituality of the Equestrian Order of the Holy Sepulchre of Jerusalem, the Grand Master of the Order, Cardinal Fernando Filoni, reflects on the life, the beliefs, the values, and the choices of a Knight and Dame.",
+    "intro_2": "This book will help current members of the Order in deepening their faith journey. It will serve as an introduction to the Order for Catholics interested in our mission for caring for the peoples and places in the Holy Land."
+  },
+
+  "cta": {
+    "buy": "Buy Book",
+    "download_audio": "Download Audio",
+    "listen_online": "Listen Online"
+  },
+
+  "author": {
+    "section_title": "The Author",
+    "name": "Cardinal Fernando Filoni",
+    "bio": [
+      "His Eminence, Cardinal Fernando Filoni was born on 15 April 1946 in Manduria (Taranto, Italy), but at an early age, his family moved back to their original town of origin Galatone (Lecce). He attended middle school in the minor seminary of Nardò before completing his high school studies in Molfetta at the Pugliese Regional Seminary Pio XI and theology studies in Viterbo at the Seminary Santa Maria della Quercia.",
+      "Monsignor Antonio Rosario Mennonna, Bishop of Nardò, ordained him a priest on 3 July 1970 in Galatone. He attended the Pontifical Lateran University, where he obtained a degree in canon law, and the La Sapienza State University, where he graduated in philosophy. He then pursued further studies at the Pro Deo (now known as the Free International University of Social Studies - LUISS) earning a postgraduate diploma in Political and Social Sciences, specializing in journalism.",
+      "During this period in Rome, he served as an assistant parish priest, focusing in particular on the education of young people and teaching at the classical high schools Vivona and Socrates.",
+      "After completing his studies, the then Cardinal Vicar of Rome, Ugo Poletti, proposed that he enter the Pontifical Ecclesiastical Academy. On 3 April 1981, he received his first diplomatic posting to Sri Lanka. After three years, he was sent to Iran (1983-1985). Later he was called to the Secretariat of State to follow relations with international organizations.",
+      "In 1989, he was sent to Brazil until 1992, when he was formally accredited in the Philippines as a Cultural Attaché, with residence in Hong Kong, where the Holy See had opened a Study Mission to closely follow the situation of the Church in China.",
+      "On 17 January 2001, he was elected to the titular see of Volturno, with the dignity of Archbishop, and appointed Apostolic Nuncio to Jordan and Iraq. He received episcopal ordination from Pope John Paul II in the Vatican Basilica on March 19, 2001."
+    ]
+  }
+}
