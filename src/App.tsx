@@ -1,17 +1,34 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useParams } from "react-router-dom";
+
+const supportedLanguages = [
+  { code: "en", label: "English", flag: "/english.svg" },
+  { code: "fr", label: "Français", flag: "/francias.svg" },
+  { code: "de", label: "Deutsch", flag: "/deutsch.svg" },
+  { code: "it", label: "Italiano", flag: "/italia.svg" },
+  { code: "ru", label: "Русский", flag: "/russia.svg" },
+];
+
 
 const App: React.FC = () => {
 	const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { lng: currentLng } = useParams<{ lng: string }>();
 
-	// Define the type for the language code, which is a string
-	const changeLanguage = (lng: string) => {
-		i18n.changeLanguage(lng);
-	};
+  const changeLanguage = (lng: string) => {
+    if (lng !== i18n.language) {
+      i18n.changeLanguage(lng); // update i18n
+      const newPath = window.location.pathname.replace(/^\/[^/]+/, `/${lng}`);
+      navigate(newPath, { replace: true });
+    }
+  };
 
   useEffect(() => {
-  document.documentElement.lang = i18n.language;
-}, [i18n.language]);
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
+
+
 
 
   const authorBio = t("author.bio", { returnObjects: true }) as string[];
@@ -26,36 +43,15 @@ const App: React.FC = () => {
           </a>
           <div className='flex items-center gap-4 flex-wrap'>
             <span className="text-white hidden md:inline-flex">{t("language_label")}:</span>
-            <button
-              onClick={() => changeLanguage("en")}
-              disabled={i18n.language === "en"}
-            >
-              <img src="/english.svg" alt="English" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
-            </button>
-            <button
-              onClick={() => changeLanguage("fr")}
-              disabled={i18n.language === "fr"}
-            >
-              <img src="/francias.svg" alt="Français" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
-            </button>
-            <button
-              onClick={() => changeLanguage("de")}
-              disabled={i18n.language === "de"}
-            >
-              <img src="/deutsch.svg" alt="Deutsch" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
-            </button>
-            <button
-              onClick={() => changeLanguage("it")}
-              disabled={i18n.language === "it"}
-            >
-              <img src="/italia.svg" alt="Italiano" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
-            </button>
-            <button
-              onClick={() => changeLanguage("ru")}
-              disabled={i18n.language === "ru"}
-            >
-              <img src="/russia.svg" alt="Русский" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
-            </button>
+            {supportedLanguages.map(({ code, label, flag }) => (
+              <button
+                key={code}
+                onClick={() => changeLanguage(code)}
+                disabled={i18n.language === code}
+              >
+                <img src={flag} alt={label} className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+              </button>
+            ))}
 
           </div>
         </div>
@@ -101,7 +97,7 @@ const App: React.FC = () => {
             ))}
             </p>
           </div>
-          <div className="w-full lg:w-1/2 bg-[url(/cardinal-filoni.png)] bg-top bg-cover bg-no-repeat min-h-[800px]"></div>
+          <div className="w-full lg:w-1/2 bg-[url(/cardinal-filoni.png)] bg-top bg-center bg-cover bg-no-repeat min-h-[800px]"></div>
         </div>
       </div>
     </div>
