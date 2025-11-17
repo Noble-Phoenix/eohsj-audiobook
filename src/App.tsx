@@ -1,4 +1,4 @@
-// src/App.tsx
+// ./App.tsx
 import React from "react";
 // Note: We use the i18n instance from react-i18next
 import { useTranslation } from "react-i18next";
@@ -20,7 +20,7 @@ const App: React.FC = () => {
 				<div className="bg-gray-500 ">
 					<div className="flex mx-auto max-w-[1200px] justify-center md:justify-between p-4 px-8 items-center gap-4 flex-wrap">
             <a href="https://eohsjnorthamerica.org" target="_blank" rel="noopener noreferrer" className='hover:scale-115 transition-transform'>
-              <img src="src/assets/cross.svg" alt="EOHSJ America Logo" className="w-10 cursor-pointer" />
+              <img src="./cross.svg" alt="EOHSJ America Logo" className="w-10 cursor-pointer" />
             </a>
             <div className='flex items-center gap-4 flex-wrap'>
               <span className="text-white hidden md:inline-flex">{t("language_label")}:</span>
@@ -28,31 +28,31 @@ const App: React.FC = () => {
                 onClick={() => changeLanguage("en")}
                 disabled={i18n.language === "en"}
               >
-                <img src="src/assets/english.svg" alt="English" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+                <img src="./english.svg" alt="English" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
               </button>
               <button
                 onClick={() => changeLanguage("fr")}
                 disabled={i18n.language === "fr"}
               >
-                <img src="src/assets/francias.svg" alt="Français" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+                <img src="./francias.svg" alt="Français" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
               </button>
               <button
                 onClick={() => changeLanguage("de")}
                 disabled={i18n.language === "de"}
               >
-                <img src="src/assets/deutsch.svg" alt="Deutsch" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+                <img src="./deutsch.svg" alt="Deutsch" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
               </button>
               <button
                 onClick={() => changeLanguage("it")}
                 disabled={i18n.language === "it"}
               >
-                <img src="src/assets/italia.svg" alt="Italiano" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+                <img src="./italia.svg" alt="Italiano" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
               </button>
               <button
                 onClick={() => changeLanguage("ru")}
                 disabled={i18n.language === "ru"}
               >
-                <img src="src/assets/russia.svg" alt="Русский" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
+                <img src="./russia.svg" alt="Русский" className="w-10 cursor-pointer hover:scale-120 transition-transform" />
               </button>
 
             </div>
@@ -63,7 +63,7 @@ const App: React.FC = () => {
 						{/* Translated Content */}
             <h1 className="uppercase roboto-condensed text-[36px] md:text-[48px] lg:text-[52px] xl:text-[62px] font-bold w-[358px] md:w-[700px] lg:w-[750px] xl:w-[900px] leading-[1.1] text-center">The House Was Filled With The Fragrance Of The Perfume:</h1>
             <h2 className="uppercase roboto-condensed text-[32px] md:text-[36px] font-medium w-[358px] md:w-[500px] lg:w-[650px] xl:w-[900px] leading-[1.1] text-center text-brand-600">A Spirituality of the Order of the Holy Sepulchre</h2>
-            <img src="src/assets/bookcover.jpg" alt="Book Cover" className="my-8 md:my-2 w-[240px] lg:absolute lg:w-[320px] lg:overflow-hidden lg:block lg:-left-30 xl:-left-40 lg:top-30 lg:-rotate-18"/>
+            <img src="./bookcover.jpg" alt="Book Cover" className="my-8 md:my-2 w-[240px] lg:absolute lg:w-[320px] lg:overflow-hidden lg:block lg:-left-30 xl:-left-40 lg:top-30 lg:-rotate-18"/>
             <p className='roboto-condensed text-[18px] w-[358px] md:w-[600px] lg:w-[500px] xl:w-[600px] leading-[1.5] text-center'>
               In his book on the spirituality of the Equestrian Order of the Holy Sepulchre of Jerusalem, the Grand Master of the Order, Cardinal Fernando Filoni, reflects on the life, the beliefs, the values, and the choices of a Knight and Dame.
             <br/>
@@ -102,7 +102,7 @@ const App: React.FC = () => {
               <br/>On 17 January 2001, he was elected to the titular see of Volturno, with the dignity of Archbishop, and appointed Apostolic Nuncio to Jordan and Iraq. He received episcopal ordination from Pope John Paul II in the Vatican Basilica on March 19, 2001.
             </p>
             </div>
-            <div className="w-full lg:w-1/2 bg-[url(src/assets/cardinal-filoni.png)] bg-top bg-cover bg-no-repeat bg-center min-h-[800px]"></div>
+            <div className="w-full lg:w-1/2 bg-[url(./cardinal-filoni.png)] bg-top bg-cover bg-no-repeat bg-center min-h-[800px]"></div>
 					</div>
 				</div>
 			</div>
