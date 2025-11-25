@@ -6,8 +6,8 @@ services:
       context: .
     image: eohsj-audiobook:latest
     restart: unless-stopped
-    ports:
-      - "3001:80"
+    expose:         # <--- Change from 'ports' to 'expose'
+      - "80"
     environment:
       - NODE_ENV=production
     labels:
