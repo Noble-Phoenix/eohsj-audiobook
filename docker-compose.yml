@@ -4,9 +4,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
     image: eohsj-audiobook:latest
-    container_name: eohsj-audiobook
     restart: unless-stopped
     ports:
       - "3001:80"
