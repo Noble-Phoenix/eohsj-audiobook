@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: eohsj-audiobook:latest
+    container_name: eohsj-audiobook
+    restart: unless-stopped
+    ports:
+      - "3001:80"
+    environment:
+      - NODE_ENV=production
+    labels:
+      - "com.docker.compose.project=eohsj-audiobook"

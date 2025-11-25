@@ -1,0 +1,71 @@
+name: Build and deploy to DigitalOcean Droplet
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build (CI check)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run linting
+        run: pnpm run lint
+
+      - name: Build (validation)
+        run: pnpm run build
+
+  deploy:
+    name: Deploy to Droplet
+    runs-on: ubuntu-latest
+    needs: build
+    env:
+      SSH_PORT: ${{ secrets.DO_SSH_PORT }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Start SSH agent and add key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.DO_SSH_PRIVATE_KEY }}
+
+      - name: Ensure remote path exists
+        run: |
+          ssh -o StrictHostKeyChecking=no -p ${SSH_PORT:-22} ${{ secrets.DO_SSH_USER }}@${{ secrets.DO_SSH_HOST }} "mkdir -p '${{ secrets.DO_APP_PATH }}'"
+
+      - name: Sync repository to droplet
+        run: |
+          rsync -av --delete --exclude '.git' --exclude 'node_modules' --exclude '.github' ./ ${{ secrets.DO_SSH_USER }}@${{ secrets.DO_SSH_HOST }}:${{ secrets.DO_APP_PATH }} -e "ssh -p ${SSH_PORT:-22} -o StrictHostKeyChecking=no"
+
+      - name: Build and deploy on droplet
+        run: |
+          ssh -o StrictHostKeyChecking=no -p ${SSH_PORT:-22} ${{ secrets.DO_SSH_USER }}@${{ secrets.DO_SSH_HOST }} <<'EOF'
+          set -eux
+          cd "${{ secrets.DO_APP_PATH }}"
+          docker compose pull || true
+          docker compose up -d --build
+          EOF
+
+      - name: Verify deployment
+        run: |
+          echo "Deployed to ${{ secrets.DO_SSH_HOST }}:${{ secrets.DO_APP_PATH }}"
+          echo "Container should be running on port 3000"

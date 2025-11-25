@@ -7,7 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docker:build": "docker build -t eohsj-audiobook .",
+    "docker:run": "docker run -d -p 3000:80 --name eohsj-audiobook eohsj-audiobook",
+    "docker:stop": "docker stop eohsj-audiobook && docker rm eohsj-audiobook",
+    "docker:compose:up": "docker compose up -d --build",
+    "docker:compose:down": "docker compose down",
+    "docker:compose:logs": "docker compose logs -f"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
