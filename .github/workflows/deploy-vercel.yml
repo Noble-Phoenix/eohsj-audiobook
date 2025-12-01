@@ -1,11 +1,11 @@
 name: Vercel Deploy
 
-# Trigger on pushes to main (prod) and any branch (preview)
+# Trigger on main branch (prod) and all other branches (preview)
 on:
   push:
     branches:
       - main
-      - '**'        # all branches for preview
+      - '**'        # all other branches
   pull_request:
     branches:
       - '**'        # all PRs
@@ -13,8 +13,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -31,23 +32,14 @@ jobs:
       - name: Deploy to Vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          GITHUB_REF: ${{ github.ref }}
         run: |
+          echo "Deploying branch ${GITHUB_REF##*/}"
           if [ "${GITHUB_REF##*/}" = "main" ]; then
             # Production deploy
-            npx vercel deploy \
-              --prod \
-              --confirm \
-              --token $VERCEL_TOKEN \
-              --org ${{ secrets.VERCEL_ORG_ID }} \
-              --project ${{ secrets.VERCEL_PROJECT_ID }}
+            npx vercel deploy --prod --confirm --token $VERCEL_TOKEN
           else
-            # Preview deploy for branch or PR
-            npx vercel deploy \
-              --confirm \
-              --token $VERCEL_TOKEN \
-              --org ${{ secrets.VERCEL_ORG_ID }} \
-              --project ${{ secrets.VERCEL_PROJECT_ID }} \
-              --prebuilt \
-              --env NEXT_PUBLIC_SITE_URL="https://your-preview-domain.vercel.app" \
-              --meta github-ref="${GITHUB_REF##*/}"
-          fi
+            # Branch/PR preview deploy
+            npx vercel deploy --confirm --prebuilt --token $VERCEL_TOKEN
