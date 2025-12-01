@@ -31,7 +31,7 @@ jobs:
 
       - name: Deploy to Vercel
         env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }} 
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
           GITHUB_REF: ${{ github.ref }}
@@ -43,3 +43,4 @@ jobs:
           else
             # Branch/PR preview deploy
             npx vercel deploy --confirm --prebuilt --token $VERCEL_TOKEN
+            fi
