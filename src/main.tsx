@@ -10,7 +10,7 @@ import i18n from "./i18n.ts";
 import { HeadProvider, Title, Meta, Link } from "react-head";
 import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
 
-const supportedLanguages = ["en", "fr", "de", "it", "ru"];
+const supportedLanguages = ["en", "fr", "de", "it", "ru", "es"];
 
 // Head meta component stays the same
 const HeadMeta: React.FC = () => {

@@ -7,6 +7,7 @@ import fr from './locales/fr/translation.json';
 import de from './locales/de/translation.json';
 import it from './locales/it/translation.json';
 import ru from './locales/ru/translation.json';
+import es from './locales/es/translation.json';
 
 i18n
   .use(LanguageDetector) // Detects browser language
@@ -18,6 +19,7 @@ i18n
       de: { translation: de },
       it: { translation: it },
       ru: { translation: ru },
+      es: { translation: es },
     },
     fallbackLng: 'en', // Default if detection fails
     detection: {

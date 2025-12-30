@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 const supportedLanguages = [
   { code: "en", label: "English", flag: "/english.svg" },
+  { code: "es", label: "Español", flag: "/espania.svg" },
   { code: "fr", label: "Français", flag: "/francias.svg" },
   { code: "de", label: "Deutsch", flag: "/deutsch.svg" },
   { code: "it", label: "Italiano", flag: "/italia.svg" },
@@ -74,13 +75,13 @@ const App: React.FC = () => {
       <div className="mt-22 w-0 h-0 border-l-[50vw] border-l-transparent border-r-[50vw] border-r-transparent border-b-48 md:border-b-80 lg:border-b-90 border-b-gray-900"></div>
       <div className="bg-gray-900">
         <div className="flex flex-wrap mx-auto max-w-[1200px] p-4 mt-6 mb-8 gap-12 md:gap-8 justify-center md:justify-around items-center">
-          <button className="h-18 w-[300px] text-[24px] bg-brand-600 text-white hover:bg-brand-900 cursor-pointer dark:text-white uppercase font-bold py-2 px-4 rounded-2xl">
+          <button href={t("cta.purchase")} className="h-18 w-[300px] text-[24px] leading-[1.2] bg-brand-600 text-white hover:bg-brand-900 cursor-pointer dark:text-white uppercase font-bold py-2 px-4 rounded-2xl">
               {t("cta.buy")}
             </button>
-          <button className="h-18 w-[300px] text-[24px] bg-brand-600 text-white hover:bg-brand-900 cursor-pointer dark:text-white uppercase font-bold py-2 px-4 rounded-2xl">
+          <button className="h-18 w-[300px] text-[24px] leading-[1.2] bg-brand-600 text-white hover:bg-brand-900 cursor-pointer dark:text-white uppercase font-bold py-2 px-4 rounded-2xl">
               {t("cta.download_audio")}
             </button>
-            <button className="h-18 w-[300px] text-[24px] bg-brand-600 text-white hover:bg-brand-900 cursor-pointer dark:text-white uppercase font-bold py-2 px-4 rounded-2xl">
+            <button className="h-18 w-[300px] text-[24px] leading-[1.2] bg-brand-600 text-white hover:bg-brand-900 cursor-pointer dark:text-white uppercase font-bold py-2 px-4 rounded-2xl">
               {t("cta.listen_online")}
             </button>
         </div>
