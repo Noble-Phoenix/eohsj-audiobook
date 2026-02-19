@@ -39,8 +39,8 @@ jobs:
           echo "Deploying branch ${GITHUB_REF##*/}"
           if [ "${GITHUB_REF##*/}" = "main" ]; then
             # Production deploy
-            npx vercel deploy --prod --confirm --token $VERCEL_TOKEN
+            npx vercel deploy --prod --yes --token $VERCEL_TOKEN
           else
             # Branch/PR preview deploy
-            npx vercel deploy --confirm --prebuilt --token $VERCEL_TOKEN
-            fi
+            npx vercel deploy --yes --token $VERCEL_TOKEN
+          fi
