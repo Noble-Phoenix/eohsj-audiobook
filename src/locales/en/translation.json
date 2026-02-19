@@ -14,6 +14,20 @@
     "download_audio": "Download Audio",
     "listen_online": "Listen Online"
   },
+  "audio": {
+    "streamUrl": "https://pub-d915376b5be541fba7ee5485931b710f.r2.dev/eohsj/eng-audiobook.mp3",
+    "downloadUrl": "https://pub-d915376b5be541fba7ee5485931b710f.r2.dev/eohsj/eng-audiobook.mp3"
+  },
+  "audiobook": {
+    "play": "Play",
+    "pause": "Pause",
+    "speed": "Speed",
+    "download": "Download MP3",
+    "resume": "Resume",
+    "start_over": "Start over",
+    "playback_speed_aria": "Playback speed",
+    "seek_aria": "Seek"
+  },
 
   "author": {
     "section_title": "The Author",

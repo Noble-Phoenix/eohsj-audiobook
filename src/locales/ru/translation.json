@@ -10,8 +10,23 @@
 
   "cta": {
     "buy": "Купить книгу",
+    "purchase": "https://www.ewtnreligiouscatalogue.com/the-house-was-filled-with-the-fragrance-of-the-perfume/p/BKEPUB82347",
     "download_audio": "Скачать аудио",
     "listen_online": "Слушать онлайн"
+  },
+  "audio": {
+    "streamUrl": "https://pub-d915376b5be541fba7ee5485931b710f.r2.dev/eohsj/eng-audiobook.mp3",
+    "downloadUrl": "https://pub-d915376b5be541fba7ee5485931b710f.r2.dev/eohsj/eng-audiobook.mp3"
+  },
+  "audiobook": {
+    "play": "Воспроизвести",
+    "pause": "Пауза",
+    "speed": "Скорость",
+    "download": "Скачать MP3",
+    "resume": "Продолжить",
+    "start_over": "Начать заново",
+    "playback_speed_aria": "Скорость воспроизведения",
+    "seek_aria": "Перемотка"
   },
 
   "author": {

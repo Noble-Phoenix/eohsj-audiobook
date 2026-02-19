@@ -13,14 +13,28 @@
     "download_audio": "Descargar Audiolibro",
     "listen_online": "Escuchar en Línea"
   },
+  "audio": {
+    "streamUrl": "https://pub-d915376b5be541fba7ee5485931b710f.r2.dev/eohsj/es-audiobook.mp3",
+    "downloadUrl": "https://pub-d915376b5be541fba7ee5485931b710f.r2.dev/eohsj/es-audiobook.mp3"
+  },
+  "audiobook": {
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "speed": "Velocidad",
+    "download": "Descargar MP3",
+    "resume": "Reanudar",
+    "start_over": "Empezar de nuevo",
+    "playback_speed_aria": "Velocidad de reproducción",
+    "seek_aria": "Buscar"
+  },
 
   "author": {
-    "section_title": "The Author",
-    "name": "Cardinal Fernando Filoni",
+    "section_title": "El Autor",
+    "name": "Cardenal Fernando Filoni",
     "bio": [
-      "His Eminence, Cardinal Fernando Filoni was born on 15 April 1946 in Manduria (Taranto, Italy), but at an early age, his family moved back to their original town of origin Galatone (Lecce). He attended middle school in the minor seminary of Nardò before completing his high school studies in Molfetta at the Pugliese Regional Seminary Pio XI and theology studies in Viterbo at the Seminary Santa Maria della Quercia.",
-      "Monsignor Antonio Rosario Mennonna, Bishop of Nardò, ordained him a priest on 3 July 1970 in Galatone. He attended the Pontifical Lateran University, where he obtained a degree in canon law, and the La Sapienza State University, where he graduated in philosophy. He then pursued further studies at the Pro Deo (now known as the Free International University of Social Studies - LUISS) earning a postgraduate diploma in Political and Social Sciences, specializing in journalism.",
-      "During this period in Rome, he served as an assistant parish priest, focusing in particular on the education of young people and teaching at the classical high schools Vivona and Socrates.",
+      "Su Eminencia, el Cardenal Fernando Filoni nació el 15 de abril de 1946 en Manduria (Taranto, Italia), pero a una edad temprana, su familia regresó a su ciudad de origen original Galatone (Lecce). Asistió al colegio secundario en el seminario menor de Nardò antes de completar sus estudios secundarios en Molfetta en el Seminario Regional Pugliese Pio XI y estudios teológicos en Viterbo en el Seminario Santa María della Quercia.",
+      "El Monsignor Antonio Rosario Mennonna, Obispo de Nardò, lo ordenó sacerdote el 3 de julio de 1970 en Galatone. Asistió a la Universidad Pontificia Lateranense, donde obtuvo un título en derecho canónico, y a la Universidad Estatal La Sapienza, donde se graduó en filosofía. Luego continuó sus estudios en la Universidad Pro Deo (ahora conocida como la Universidad Internacional Libre de Estudios Sociales - LUISS), obteniendo un diploma postgrado en Ciencias Políticas y Sociales, especializándose en periodismo.",
+      "Durante este período en Roma, sirvió como cura asistente de parroquia, enfocándose particularmente en la educación de jóvenes y enseñanza en las escuelas secundarias clásicas Vivona y Socrates.",
       "After completing his studies, the then Cardinal Vicar of Rome, Ugo Poletti, proposed that he enter the Pontifical Ecclesiastical Academy. On 3 April 1981, he received his first diplomatic posting to Sri Lanka. After three years, he was sent to Iran (1983-1985). Later he was called to the Secretariat of State to follow relations with international organizations.",
       "In 1989, he was sent to Brazil until 1992, when he was formally accredited in the Philippines as a Cultural Attaché, with residence in Hong Kong, where the Holy See had opened a Study Mission to closely follow the situation of the Church in China.",
       "On 17 January 2001, he was elected to the titular see of Volturno, with the dignity of Archbishop, and appointed Apostolic Nuncio to Jordan and Iraq. He received episcopal ordination from Pope John Paul II in the Vatican Basilica on March 19, 2001."
