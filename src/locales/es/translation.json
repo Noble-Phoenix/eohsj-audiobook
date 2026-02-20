@@ -14,8 +14,8 @@
     "listen_online": "Escuchar en Línea"
   },
   "audio": {
-    "streamUrl": "https://pub-d915376b5be541fba7ee5485931b710f.r2.dev/eohsj/es-audiobook.mp3",
-    "downloadUrl": "https://pub-d915376b5be541fba7ee5485931b710f.r2.dev/eohsj/es-audiobook.mp3"
+    "streamUrl": "https://eohsj.noblephoenix.com/es-audiobook.mp3",
+    "downloadUrl": "https://eohsj.noblephoenix.com/es-audiobook.mp3"
   },
   "audiobook": {
     "play": "Reproducir",
